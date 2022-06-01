@@ -74,6 +74,8 @@ app.post('/send-email', jsonParser, async (req, res) => {
     res.json({ message: 'Email has been sent', success: true });
 })
 
-
-app.listen(3000);
-console.log('Server on port 3000')
+const PORT = process.env.PORT || 3000;
+console.log({ PORT });
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});
