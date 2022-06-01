@@ -10,7 +10,7 @@ var jsonParser = bodyParser.json()
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.post('/send-email', jsonParser, async (req, res) => {
+app.post('https://emailsenderint.herokuapp.com/send-email', jsonParser, async (req, res) => {
 
     const { name, lastName, email, phone, address, services, phoneCheck, emailCheck, message, correo } = req.body;
 
