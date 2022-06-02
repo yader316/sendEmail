@@ -16,5 +16,8 @@
   "devDependencies": {
     "nodemailer": "^6.3.0",
     "nodemon": "^1.19.2"
+  },
+  "engines": {
+    "node": ">=16.13.2"
   }
 }
