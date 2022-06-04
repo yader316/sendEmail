@@ -63,7 +63,6 @@ app.post('/send-email', jsonParser, async (req, res) => {
         from: `"${name}" <test@lalemanllc.com>`, // sender address,
         to: `${correo}`,
         subject:`${email}`,
-        // text: 'Hello World'
         html: contentHTML
     })
 
