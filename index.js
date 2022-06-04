@@ -3,10 +3,12 @@ const app = express();
 const path = require('path');
 const bodyParser = require('body-parser')
 const nodemailer = require('nodemailer');
+const cors = require('cors');
 
 
 var jsonParser = bodyParser.json()
 
+app.use(cors({origin: '*'}));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
