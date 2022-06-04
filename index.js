@@ -16,7 +16,6 @@ app.post('/send-email', jsonParser, async (req, res) => {
 
     const { name, lastName, email, phone, address, services, phoneCheck, emailCheck, message, correo } = req.body;
 
-
     contentHTML = `
         <div style="
             width: 70%;
