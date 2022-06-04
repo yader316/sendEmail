@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.post('/send-email', jsonParser, async (req, res) => {
 
-    const { name, lastName, email, phone, address, services, phoneCheck, emailCheck, message, correo } = req.body;
+    const { name, lastName, email, phone, address, services, phoneCheck, emailCheck, message, correo, logo } = req.body;
 
     contentHTML = `
         <div style="
@@ -27,7 +27,7 @@ app.post('/send-email', jsonParser, async (req, res) => {
         ">
             <div style="text-align: center;" >
                 <img
-                    src="https://theoakmillcabinetshop.com/wp-content/uploads/2022/01/THE-OAK-MILL-CABINET-SHOP-wh.png"
+                    src="${logo}"
                     alt="logo-empresa"
                     style="width: 30%;"
                 >
