@@ -39,7 +39,8 @@ app.post('/send-email', jsonParser, async (req, res) => {
                 <li style=" padding: 10px;border-bottom: 1px solid rgb(208, 208, 208);">Phone: ${phone}</li>
                 <li style=" padding: 10px;border-bottom: 1px solid rgb(208, 208, 208);">Address: ${address}</li>
                 <li style=" padding: 10px;border-bottom: 1px solid rgb(208, 208, 208);">Services: ${services}</li>
-                <li style=" padding: 10px;border-bottom: 1px solid rgb(208, 208, 208);">Accept: ${phoneCheck}, ${emailCheck}</li>
+                <li style=" padding: 10px;border-bottom: 1px solid rgb(208, 208, 208);">Best Way To Contact You: <br>
+                ${phoneCheck}, ${emailCheck}</li>
             </ul>
             <p style="padding: 20px;border: 1px solid rgb(208, 208, 208);">${message}</p>
         </div>
