@@ -47,12 +47,12 @@ app.post('/send-email', jsonParser, async (req, res) => {
     `;
 
     const transporter = nodemailer.createTransport({
-        host: 'mail.interscopemarketing.com',
+        host: 'mail.lalemanllc.com',
         port: 465,
         secure: true,
         auth: {
-            user: 'no-reply@interscopemarketing.com',
-            pass: 'TN5cLb8DQfBiZ6gj'
+            user: 'test@lalemanllc.com',
+            pass: 'Testyader67'
         },
         tls: {
             rejectUnauthorized: false
