@@ -47,12 +47,19 @@ app.post('/send-email', jsonParser, async (req, res) => {
     `;
 
     const transporter = nodemailer.createTransport({
-        host: 'mail.lalemanllc.com',
+        // host: 'mail.lalemanllc.com',
+        // port: 465,
+        // secure: true,
+        // auth: {
+        //     user: 'test@lalemanllc.com',
+        //     pass: 'Testyader67'
+        // },
+        host: 'mail.ultimatewebstudio.com',
         port: 465,
         secure: true,
         auth: {
-            user: 'test@lalemanllc.com',
-            pass: 'Testyader67'
+            user: 'no-reply@ultimatewebstudio.com',
+            pass: '5!]a}]7$91l?'
         },
         tls: {
             rejectUnauthorized: false
