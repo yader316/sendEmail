@@ -47,13 +47,6 @@ app.post('/send-email', jsonParser, async (req, res) => {
     `;
 
     const transporter = nodemailer.createTransport({
-        // host: 'mail.lalemanllc.com',
-        // port: 465,
-        // secure: true,
-        // auth: {
-        //     user: 'test@lalemanllc.com',
-        //     pass: 'Testyader67'
-        // },
         host: 'mail.ultimatewebstudio.com',
         port: 465,
         secure: true,
@@ -74,11 +67,7 @@ app.post('/send-email', jsonParser, async (req, res) => {
     })
 
     console.log('Message sent: %s', info.messageId);
-    // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
 
-    // // Preview only available when sending through an Ethereal account
-    // console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-    // // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
     res.json({ message: 'Email has been sent', success: true });
 })
 
